@@ -19,7 +19,7 @@ AddSubClass( // this is the function you will be calling to add the variant
 
 		subname : "Void Walker", //required; the name of the subclass
 
-		source : ["Hombrew"], //required; the source and the page number. "HB" stands for homebrew. See the "Complete SourceList" for an overview of sources that are already defined. Or define a new source using the "Homebrew Syntax - SourceList.js". // This can be an array of arrays to indicate the things appears in multiple sources. For example, if something appears on page 7 of the Elemental Evil Player's Companion and on page 115 of the Sword Coast Adventure Guide, use the following: [["E", 7], ["S", 3415]]
+		source : ["HB"], //required; the source and the page number. "HB" stands for homebrew. See the "Complete SourceList" for an overview of sources that are already defined. Or define a new source using the "Homebrew Syntax - SourceList.js". // This can be an array of arrays to indicate the things appears in multiple sources. For example, if something appears on page 7 of the Elemental Evil Player's Companion and on page 115 of the Sword Coast Adventure Guide, use the following: [["E", 7], ["S", 3415]]
 
 		// after defining the above three, you don't need to define anything more, but you can. Defining more stuff will overwrite the entries as they are given in the ClassList. So if you do not need something to be different than the basics of the class (for example, you subclass uses the same spellcasting ability), then you don't need to define it again.
 		// For the syntax of how to define more stuff, look at the ClassList (see "Homebrew Syntax - ClassList.js"). You can define all the same stuff in the same way. The below are a couple of examples:
@@ -77,13 +77,12 @@ AddSubClass( // this is the function you will be calling to add the variant
                                         "You are able to make the pocket big enough to fit up to 9 creatures of your choosing.",
                                         "The pocket can be fitted with a small tinted glass window to be able to look outside.",
                                         ]),
-                                        action : ["bonus action", "Store Item"],
-                                        action : ["action", "Take Item"],
+                                        action : [["bonus action", "Store Item"], ["action", "Take Item"]],
 				additional : ["", "", "2", "2", "2", "2", "3", "3", "3", "4", "4", "4", "4", "4", "4 and hut", "4 and hut", "4 and hut", "4 and hut", "4 and hut", "4 and hut"],
 			},
 			"subclassfeature3.3" : { // has to start with "subclassfeature" followed by a number. Note that the name has to be unique for this subclass, but it can be the same name as one of the features of the class in the ClassList variable. If you use the same name as a feature in the ClassList variable, it will be overwritten with this entry
 				name : "Into the void",
-				source : ["Homebrew"],
+				source : ["HB"],
 				minlevel : 3,
                 description : desc([ 
                                         "Experience traveling through the void allows you to slip across dimensions",
@@ -95,7 +94,7 @@ AddSubClass( // this is the function you will be calling to add the variant
 			},
             "subclassfeature7" : {
 				name : "Dimensional Rift",
-				source : ["Homebrew"],
+				source : ["HB"],
                 minlevel : 7,
                 description : desc([
                     "By combining your action and your movement, you can create a pathway through the void by",
@@ -110,7 +109,7 @@ AddSubClass( // this is the function you will be calling to add the variant
 			},
 			"subclassfeature10" : {
 				name : "Void Sense",
-				source : ["Homebrew"],
+				source : ["HB"],
 				minlevel : 10,
                 description : desc([
                               "The voices come to your aid again telling the best way to solve a problem.", 
@@ -122,7 +121,7 @@ AddSubClass( // this is the function you will be calling to add the variant
 			},
 			"subclassfeature15" : {
 				name : "Void Drop",
-				source : ["Homebrew"],
+				source : ["HB"],
 				minlevel : 15,
                 description : desc([
                               "As an action, you can open a portal below a single enemy within 60 ft.that would fit through the", 
@@ -138,7 +137,7 @@ AddSubClass( // this is the function you will be calling to add the variant
             },
             "subclassfeature18" : {
 				name : "Void Mastery",
-				source : ["Homebrew"],
+				source : ["HB"],
 				minlevel : 18,
                 description : desc([
                               "True mastery of the void through extensive training has granted the following", 
