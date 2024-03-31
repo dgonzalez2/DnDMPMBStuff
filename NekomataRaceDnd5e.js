@@ -13,7 +13,7 @@ SourceList[["HB", 0]]=
 	name : "Nekomata",
 	abbreviation : "HB",
 	group : "Third Party",
-	url : "https://www.dandwiki.com/wiki/Half-Tabaxi_(5e_Race)",
+	url : "https://www.gmbinder.com/share/-M5_HqBZnv4VF9ZspaaC#:~:text=Felis%20Physiology,of%20almost%20any%20known%20combination.",
 	date : "2024-03-02"
 };
 
@@ -79,12 +79,12 @@ RaceList["Nekomata"] =
 		trait : "Nekomata (+2 Dexterity)"+
 		"\n \u2022 Keen Sense: I have proficiency in Perception"+
 		"\n \u2022 Feline Agility: When moving on my turn in combat, I can move double my speed. Once you use this trait, you can't use it again until you move O feet on one of your turns." +
-	 	 "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
+	 	"\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
 	}
 };
 
 AddRacialVariant("Nekomata", "Nekomata, domesticated", {
-  regExpSearch: /^(?=.*Nekomata)(?=.*domesticated).*$/i,
+  regExpSearch: /^(?=.*nekomata)(?=.*domesticated).*$/i,
   name: "Nekomata, Domesticated",
   source: ["HB", 0],
   plural: "Nekomata, Domesticated",
@@ -98,7 +98,7 @@ toolProfs : [
 });
 
 AddRacialVariant("Nekomata", "Nekomata, wild", {
-  regExpSearch: /^(?=.*Nekomata)(?=.*wild).*$/i,
+  regExpSearch: /^(?=.*nekomata)(?=.*wild).*$/i,
   name: "Nekomata, Wild",
   source: ["HB", 0],
   scores : [0, 0, 0, 1, 0, 0],
@@ -113,13 +113,4 @@ The Nekomatas are medium sized humanoids with cat ears, a tail that splits in tw
 History
 Though similarly cat-like with the Tabaxi race, the Nekomata are vastly different to the Tabaxi and are a lot more human-like in appearance. Some historians even believe that the Nekomata, and Tabaxi have a common ancestral line that dates back to ancient times, but nothing as of now has been confirmed.
 
-Half-Tabaxi Traits
-Ability Score Increase. Your Dexterity score increases by 2, and one other ability scores of your choice increase by 1.
-Age. Half-Tabaxi age at about the same rate as Humans.
-Alignment. Half-Tabaxi tend towards chaos similarly to Tabaxi, but have no strong tendency towards good or evil.
-Size. Half-Tabaxi are very similar in size to Humans, if not a bit slimmer. Your size is Medium
-Speed. Your base walking speed is 30 feet.
-Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-Cat’s Talent. You gain proficiency in Perception, Stealth, and one other skill of your choice
-Feline Agility. Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.
-Languages. You can speak, read, and write Common and one other language of your choice. */
+ */
