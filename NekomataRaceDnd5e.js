@@ -17,7 +17,7 @@ SourceList[["HB", 0]]={
 };
 
 RaceList["Nekomata"] = {
-	regExpSearch : /Nekomata/i,
+	regExpSearch : /^(?=.*Nekomata).*$/i
 	name : "Nekomata",
 	source : [["HB, 0"]],
 	plural : "Nekomata",
@@ -41,7 +41,7 @@ RaceList["Nekomata"] = {
   weaponOptions: [
     {
       baseWeapon : "unarmed strike",
-      regExpSearch: /^(?=.*\bclaws?\b).*$/i,
+      regExpSearch: /^(?=.*\claws?\b).*$/i,
       name: "Claws",
       source: ["HB", 0],
       ability: 1,
@@ -62,19 +62,19 @@ features : {
 		additional : "still for 1 turn to recover",
 		tooltip : " (can be replenished by not moving for one whole turn)"
 	},
-	 "Cat Shape":{
-      name : "Cat Shape",
-      minlevel : 3,
-      usages : 1,
-      recovery: "short rest",
+	"Cat Shape":{
+     	name : "Cat Shape",
+      	minlevel : 3,
+      	usages : 1,
+      	recovery: "short rest",
 	action : [["action", ""]],
-      additional: "can turn into a saber tooth tiger at 7th level",
+      	additional: "can turn into a saber tooth tiger at 7th level",
 	},
 	trait : "Nekomata (+2 Dexterity)"+
 	"\n \u2022 Keen Sense: I have proficiency in Perception"+
 	"\n \u2022 Feline Agility: When moving on my turn in combat, I can move double my speed. Once you use this trait, you can't use it again until you move O feet on one of your turns." +
-  "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
-}
+ 	 "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
+	}
 };
 
 AddRacialVariant("Nekomata", "Nekomata, domesticated", {
