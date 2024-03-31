@@ -19,7 +19,7 @@ SourceList[["HB", 0]]=
 
 RaceList["Nekomata"] = 
 {
-	regExpSearch : /^(?=.*Nekomata).*$/i,
+	regExpSearch : /^(?=.*nekomata).*$/i,
 	name : "Nekomata",
 	source : [["HB, 0"]],
 	plural : "Nekomata",
