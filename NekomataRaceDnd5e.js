@@ -8,13 +8,13 @@
 var iFileName = "NekomataRaceDnd5e.js";
 RequiredSheetVersion("13.1.0");
 
-SourceList[["HB", 0]]=
+SourceList["HB", 0]=
 {
 	name : "Nekomata",
 	abbreviation : "HB",
 	group : "Third Party",
 	url : "https://www.gmbinder.com/share/-M5_HqBZnv4VF9ZspaaC#:~:text=Felis%20Physiology,of%20almost%20any%20known%20combination.",
-	date : "2024-03-02"
+	
 };
 
 RaceList["Nekomata"] = 
@@ -105,12 +105,3 @@ AddRacialVariant("Nekomata", "Nekomata, wild", {
   plural: "Nekomata, Wild",
   skills: ["Stealth", "Nature"],
 });
-
-/* Nekomata
-Physical Description
-The Nekomatas are medium sized humanoids with cat ears, a tail that splits in two before reaching the body, and occasionally have whiskers. They are usually slender and lithe in build, and are also known to have a vast array of hair and eye color of almost any known combination.
-
-History
-Though similarly cat-like with the Tabaxi race, the Nekomata are vastly different to the Tabaxi and are a lot more human-like in appearance. Some historians even believe that the Nekomata, and Tabaxi have a common ancestral line that dates back to ancient times, but nothing as of now has been confirmed.
-
- */
