@@ -54,23 +54,21 @@ RaceList["Nekomata"] = {
     },
   ],
 features : {
-		"feline agility" : {
-			name : "Feline Agility",
-			minlevel : 1,
-			usages : 1,
-			recovery : " Turn",
-			additional : "still for 1 turn to recover",
-			tooltip : " (can be replenished by not moving for one whole turn)"
-		},
-    "Cat Shape":
-    {
+	"feline agility" : {
+		name : "Feline Agility",
+		minlevel : 1,
+		usages : 1,
+		recovery : " Turn",
+		additional : "still for 1 turn to recover",
+		tooltip : " (can be replenished by not moving for one whole turn)"
+	},
+	 "Cat Shape":{
       name : "Cat Shape",
       minlevel : 3,
       usages : 1,
       recovery: "short rest",
-			action : [["action", ""]]
+	action : [["action", ""]],
       additional: "can turn into a saber tooth tiger at 7th level",
-    }  
 	},
 	trait : "Nekomata (+2 Dexterity)"+
 	"\n \u2022 Keen Sense: I have proficiency in Perception"+
