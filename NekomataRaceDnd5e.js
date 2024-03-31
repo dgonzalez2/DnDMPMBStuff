@@ -74,6 +74,7 @@ features : {
 	"\n \u2022 Keen Sense: I have proficiency in Perception"+
 	"\n \u2022 Feline Agility: When moving on my turn in combat, I can move double my speed. Once you use this trait, you can't use it again until you move O feet on one of your turns." +
   "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
+}
 };
 
 AddRacialVariant("Nekomata", "Nekomata, domesticated", {
