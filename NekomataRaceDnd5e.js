@@ -17,7 +17,7 @@ SourceList["HB", 0]=
 	
 };
 
-RaceList["Nekomata"] = 
+RaceList["nekomata"] = 
 {
 	regExpSearch : /^(?=.*nekomata).*$/i,
 	name : "Nekomata",
@@ -39,12 +39,12 @@ RaceList["Nekomata"] =
 	weightMetric : " weigh around 70 kg (40 + 5d10 \xD7 4d4 / 10 kg)",
 	scores : [0, 2, 0, 0, 0, 0],
 	
-	weapons: ["Claws"],
+	weaponsAdd: ["Claws"],
 	weaponOptions: 
 	[
 		{
 			baseWeapon : "unarmed strike",
-			regExpSearch: /^(?=.*\claws?\b).*$/i,
+			regExpSearch: /claws/i,
 			name: "Claws",
 			source: ["HB", 0],
 			ability: 1,
@@ -83,8 +83,8 @@ RaceList["Nekomata"] =
 	}
 };
 
-AddRacialVariant("Nekomata", "Nekomata, domesticated", {
-  regExpSearch: /^(?=.*nekomata)(?=.*domesticated).*$/i,
+AddRacialVariant("nekomata", "domesticated", {
+  regExpSearch: /domesticated/i,
   name: "Nekomata, Domesticated",
   source: ["HB", 0],
   plural: "Nekomata, Domesticated",
@@ -97,8 +97,8 @@ toolProfs : [
     "Fluffy Personality: With your sweet disposition, people tend to think the best of you. You gain proficiency in Persuasion. If you already have proficiency in Persuasion, you may choose to have proficiency in any other Charisma based skill.",
 });
 
-AddRacialVariant("Nekomata", "Nekomata, wild", {
-  regExpSearch: /^(?=.*nekomata)(?=.*wild).*$/i,
+AddRacialVariant("nekomata", "wild", {
+  regExpSearch: /wild/i,
   name: "Nekomata, Wild",
   source: ["HB", 0],
   scores : [0, 0, 0, 1, 0, 0],
