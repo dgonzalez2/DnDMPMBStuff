@@ -5,10 +5,11 @@
 	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
 */
 
-var iFileName = "Nekomata Race.js";
+var iFileName = "NekomataRaceDnd5e.js";
 RequiredSheetVersion("13.1.0");
 
-SourceList[["HB", 0]]={
+SourceList[["HB", 0]]=
+{
 	name : "Nekomata",
 	abbreviation : "HB",
 	group : "Third Party",
@@ -16,8 +17,9 @@ SourceList[["HB", 0]]={
 	date : "2024-03-02"
 };
 
-RaceList["Nekomata"] = {
-	regExpSearch : /^(?=.*Nekomata).*$/i
+RaceList["Nekomata"] = 
+{
+	regExpSearch : /^(?=.*Nekomata).*$/i,
 	name : "Nekomata",
 	source : [["HB, 0"]],
 	plural : "Nekomata",
@@ -37,43 +39,47 @@ RaceList["Nekomata"] = {
 	weightMetric : " weigh around 70 kg (40 + 5d10 \xD7 4d4 / 10 kg)",
 	scores : [0, 2, 0, 0, 0, 0],
 	
-  weapons: ["Claws"],
-  weaponOptions: [
-    {
-      baseWeapon : "unarmed strike",
-      regExpSearch: /^(?=.*\claws?\b).*$/i,
-      name: "Claws",
-      source: ["HB", 0],
-      ability: 1,
-      type: "Natural",
-      damage: [1, 4, "slashing"],
-      range: "Melee",
-      description: "",
-      abilitytodamage: true,
-      monkweapon: true,
-    },
-  ],
-features : {
-	"feline agility" : {
-		name : "Feline Agility",
-		minlevel : 1,
-		usages : 1,
-		recovery : " Turn",
-		additional : "still for 1 turn to recover",
-		tooltip : " (can be replenished by not moving for one whole turn)"
-	},
-	"Cat Shape":{
-     	name : "Cat Shape",
-      	minlevel : 3,
-      	usages : 1,
-      	recovery: "short rest",
-	action : [["action", ""]],
-      	additional: "can turn into a saber tooth tiger at 7th level",
-	},
-	trait : "Nekomata (+2 Dexterity)"+
-	"\n \u2022 Keen Sense: I have proficiency in Perception"+
-	"\n \u2022 Feline Agility: When moving on my turn in combat, I can move double my speed. Once you use this trait, you can't use it again until you move O feet on one of your turns." +
- 	 "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
+	weapons: ["Claws"],
+	weaponOptions: 
+	[
+		{
+			baseWeapon : "unarmed strike",
+			regExpSearch: /^(?=.*\claws?\b).*$/i,
+			name: "Claws",
+			source: ["HB", 0],
+			ability: 1,
+			type: "Natural",
+			damage: [1, 4, "slashing"],
+			range: "Melee",
+			description: "",
+			abilitytodamage: true,
+			monkweapon: true,
+		},
+	],
+	features : 
+	{
+		"feline agility" : 
+		{
+			name : "Feline Agility",
+			minlevel : 1,
+			usages : 1,
+			recovery : " Turn",
+			additional : "still for 1 turn to recover",
+			tooltip : " (can be replenished by not moving for one whole turn)"
+		},
+		"Cat Shape":
+		{
+		     	name : "Cat Shape",
+		      	minlevel : 3,
+		      	usages : 1,
+		      	recovery: "short rest",
+			action : [["action", ""]],
+		      	additional: "can turn into a saber tooth tiger at 7th level",
+		},
+		trait : "Nekomata (+2 Dexterity)"+
+		"\n \u2022 Keen Sense: I have proficiency in Perception"+
+		"\n \u2022 Feline Agility: When moving on my turn in combat, I can move double my speed. Once you use this trait, you can't use it again until you move O feet on one of your turns." +
+	 	 "\n \u2022 Feline Flexibility: You have proficiency in Acrobatics, and take half of any fall damage from heights from about 20 ft."
 	}
 };
 
