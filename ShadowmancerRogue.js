@@ -22,7 +22,7 @@ AddSubClass(
         
       },
 
-      "subclassfeature3" : {
+      "subclassfeature3.1" : {
         name : "Shadow Movement",
         source : ["HB", 0],
 				minlevel : 3,
@@ -38,7 +38,7 @@ AddSubClass(
         usages : [2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6],
         recovery : "long rest",
       },
-      "subclassfeature9" : {
+      "subclassfeature9.1" : {
         name : "Gone with the Darkness",
         source : ["HB", 0],
 				minlevel : 9,
